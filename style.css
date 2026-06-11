@@ -1,0 +1,98 @@
+/* Cores do Projeto (Identidade Visual Harmônica) */
+:root {
+    --cor-fundo: #f4f7f5;
+    --cor-card: #ffffff;
+    --cor-texto: #2c3e50;
+    --cor-primaria: #27ae60; /* Verde Sustentável */
+    --cor-primaria-hover: #219653;
+}
+
+/* Modo Escuro (Critério de Acessibilidade/UX) */
+body.modo-escuro {
+    --cor-fundo: #1e272e;
+    --cor-card: #2f3640;
+    --cor-texto: #f5f6fa;
+    --cor-primaria: #2ecc71;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    transition: background-color 0.3s ease; /* Feedback visual suave */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--cor-card);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.tag-agrinho {
+    background-color: #f39c12;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+}
+
+.formulario-container, .feed-container {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: var(--cor-card);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Botões com Feedback Visual (Hover e Transição) */
+.btn-principal {
+    background-color: var(--cor-primaria);
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-principal:hover {
+    background-color: var(--cor-primaria-hover);
+}
+
+/* Card gerado dinamicamente */
+.card-post {
+    border-left: 5px solid var(--cor-primaria);
+    background-color: var(--cor-fundo);
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+
+/* === RESPONSIVIDADE (Media Queries obrigatórias) === */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+    .formulario-container, .feed-container {
+        margin: 15px;
+    }
+}

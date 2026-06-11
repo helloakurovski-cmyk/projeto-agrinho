@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cultivo Sustentável - Agrinho 2026</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-area">
+            <h1>SustentaAgro</h1>
+            <span class="tag-agrinho">#Agrinho2026</span>
+        </div>
+        <button id="btn-acessibilidade" class="btn-secundario">Alternar Modo Escuro</button>
+    </header>
+
+    <main>
+        <section class="banner-tema">
+            <h2>Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente</h2>
+            <p>Compartilhe problemas da sua lavoura e encontre soluções sustentáveis com a comunidade.</p>
+        </section>
+
+        <section class="formulario-container">
+            <h3>Relatar Problema na Plantação</h3>
+            <form id="form-postagem">
+                <label for="nome-usuario">Seu Nome:</label>
+                <input type="text" id="nome-usuario" required placeholder="Ex: João Silva">
+
+                <label for="descricao-problema">O que está acontecendo?</label>
+                <textarea id="descricao-problema" required placeholder="Descreva os sintomas da planta..."></textarea>
+
+                <button type="submit" class="btn-principal">Publicar no Feed</button>
+            </form>
+        </section>
+
+        <section class="feed-container">
+            <h3>Feed de Ajuda Comunitária</h3>
+            <div id="feed-posts">
+                </div>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
